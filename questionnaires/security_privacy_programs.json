@@ -903,18 +903,33 @@
             }
           ]
         },
+       
+		   {
+          "type": "block",
+          "text": "Security Contacts",
+          "id": "block_security_contact",
+          "items": [
+            {
+              "type": "line",
+              "text": "List the email addresses of people we should contact about any security issues in this section (security and privacy programs):",
+              "id": "security_contacts"
+            }
+          ]
+        },
         {
           "type": "block",
           "text": "Feedback",
-          "id": "block_feedback",
+          "id": "feedback_block",
           "items": [
             {
               "type": "box",
-              "text": "<b>Good news!</b> You have made it to the end of this questionnaire. If you can spare another minute, please let us know how we can improve it. Any feedback is highly appreciated.",
+              "text": "<b>Congratulations!</b> You've made it to the end of this questionnaire. If you can spare another minute, please let us know how we can improve it. Your feedback is highly appreciated.",
               "id": "feedback"
             }
           ]
         }
+		  
+		  
       ]
     }
   ]

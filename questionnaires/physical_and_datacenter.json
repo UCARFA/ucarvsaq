@@ -462,7 +462,7 @@
                 },
                 {
                   "id": "dc_outage",
-                  "text": "Even the most advanced and protected data centers have occasional outages. Depending on the availability requirements of your project, it might be necessary to quickly switch to another data center so that operations can be resumed without excessive downtime.",
+                  "text": "Even the most advanced and protected data centers have occasional outages. Depending on the availability requirements of the project, it might be necessary to quickly switch to another data center so that operations can be resumed without excessive downtime.",
                   "type": "radiogroup",
                   "defaultChoice": false,
                   "choices": [
@@ -509,15 +509,27 @@
             }
           ]
         },
+		   {
+          "type": "block",
+          "text": "Security Contacts",
+          "id": "block_security_contact",
+          "items": [
+            {
+              "type": "line",
+              "text": "List the email addresses of people we should contact about any security issues in this section (Physical & Datacenter security:",
+              "id": "security_contacts"
+            }
+          ]
+        },
         {
           "type": "block",
-          "id": "block_feedback",
           "text": "Feedback",
+          "id": "feedback_block",
           "items": [
             {
               "type": "box",
-              "id": "feedback",
-              "text": "<b>Good news!</b> You have made it to the end of this questionnaire. If you can spare another minute, please let us know how we can improve it. Any feedback is highly appreciated."
+              "text": "<b>Congratulations!</b> You've made it to the end of this questionnaire. If you can spare another minute, please let us know how we can improve it. Your feedback is highly appreciated.",
+              "id": "feedback"
             }
           ]
         }
