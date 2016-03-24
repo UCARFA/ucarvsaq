@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "questionnaire": [
+    {
+      "type": "block",
+      "text": "Cloud Application Security Questionnaire",
+      "items": [
+        {
+          "type": "block",
+          "id": "general",
+          "text": "Data Protection",
+          "items": [
+             {
+                  "type": "box",
+                  "text": "What is the your role in the protection of the clients data?",
+                  "id": "vendors_role_protection"
+             },
+			  {
+                  "type": "box",
+                  "text": "What is the client’s role in the protection of the clients data?",
+                  "id": "clients_role_protection"
+             },
+			  {
+                  "type": "box",
+                  "text": "Who can view / access the client’s enterprise data in the cloud?",
+                  "id": "access_to_enterprise_data"
+             }
+			  ,
+			  {
+                  "type": "box",
+                  "text": "What policies are in place to ensure only authorized access to a client’s data.",
+                  "id": "access_policies"
+             }
+			  ,
+			  {
+                  "type": "box",
+                  "text": "What is your process for responding to a legal hold request?",
+                  "id": "legal_hold_request"
+             }
+            
+          ]
+        },
+		  
+		  {
+              "type": "block",
+              "text": "Disaster Recovery",
+              "id": "block_disaster_recovery",
+              "items": [
+                {
+                  "type": "radiogroup",
+                  "text": "Does you have a disaster recovery plan for client applications and data? ",
+                  "defaultChoice": false,
+                  "id": "application_vm_securitycontact",
+                  "choices": [
+                    {"application_vm_securitycontact_yes": "Yes, we have a published disaster recovery plan for client applications and data."},
+                    {"application_vm_securitycontact_no": "No, we do not currently have a published diasaster recovery plan."}
+                  ]
+                },
+                {
+                  "type": "tip",
+                  "text": "A documented disaster recovery plan for client applications and data hosted by a cloud vendor is important for a client to understand to verify that the plan mitigates client risk sufficiently",
+                  "why": "If you have compensating controls in place or feel that this issue does not constitute a risk in your specific circumstances, please explain below. If you're working to address this issue, include an estimate of when it will be resolved:",
+                  "warn": "yes",
+                  "name": "No external security contact published",
+                  "severity": "medium",
+                  "id": "warn_application_vm_securitycontact",
+                  "cond": "application_vm_securitycontact_no"
+                },
+				  {
+                  "type": "box",
+                  "text": "Explain the details of the plan",    
+                  "id": "disaster_recovery_plan_details",
+                  "cond": "application_vm_securitycontact_yes"
+                }
+				  ,
+				  {
+                  "type": "box",
+                  "text": "What do you do in the event of client data corruption?",
+                  "id": "data_corruption"
+             	}
+              ]
+            },
+		  
+		   {
+          "type": "block",
+          "id": "notifications_block",
+          "text": "Change Notification",
+          "items": [
+             {
+                  "type": "box",
+                  "text": "Do you alert your customers of important changes like security practices and regulations or data center locations?",
+                  "id": "notifications"
+             }
+            
+          ]
+        },
+		   {
+          "type": "block",
+          "id": "termination_block",
+          "text": "Account Termination",
+          "items": [
+             {
+                  "type": "box",
+                  "text": "What is your termination process for ensuring secure data transfer and destruction of a client’s data?",
+                  "id": "terminations"
+             }
+            
+          ]
+        },
+		  {
+          "type": "block",
+          "id": "encryption",
+          "text": "Data Encryprtion",
+          "items": [
+             {
+                  "type": "box",
+                  "text": "How are encryption keys managed?",
+                  "id": "encryption_keys"
+             }
+            
+          ]
+        },
+		   {
+          "type": "block",
+          "text": "Security Contacts",
+          "id": "block_security_contact",
+          "items": [
+            {
+              "type": "line",
+              "text": "List the email addresses of people we should contact about any security issues in this section:",
+              "id": "security_contacts"
+            }
+          ]
+        },
+        {
+          "type": "block",
+          "text": "Feedback",
+          "id": "feedback_block",
+          "items": [
+            {
+              "type": "box",
+              "text": "<b>Congratulations!</b> You've made it to the end of this questionnaire. If you can spare another minute, please let us know how we can improve it. Your feedback is highly appreciated.",
+              "id": "feedback"
+            }
+          ]
+        }
+		  
+		  
+		  
+		  
+      ]
+    }
+  ]
+}
