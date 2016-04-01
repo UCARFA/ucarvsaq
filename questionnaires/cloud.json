@@ -12,7 +12,7 @@
           "items": [
              {
                   "type": "box",
-                  "text": "What is the your role in the protection of the clients data?",
+                  "text": "What is your role in the protection of the clients data?",
                   "id": "vendors_role_protection"
              },
 			  {
@@ -48,7 +48,7 @@
               "items": [
                 {
                   "type": "radiogroup",
-                  "text": "Does you have a disaster recovery plan for client applications and data? ",
+                  "text": "Do you have a disaster recovery plan for client applications and data? ",
                   "defaultChoice": false,
                   "id": "application_vm_securitycontact",
                   "choices": [
